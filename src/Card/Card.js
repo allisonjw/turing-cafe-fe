@@ -6,8 +6,9 @@ const Card = ({id, name, date, time, number}) => {
         <div className="card">
           <h2 className="card_name">{name}</h2>
           <p className="card_date">{date}</p>
-          <p className="card_time">{time}</p>
-          <p className="number">{number}</p>
+          <p className="card_time">{time} pm</p>
+          <p className="number">Number of Guest:{number}</p>
+          <button className="card_btn">Cancel</button>
         </div>
     )
 }
