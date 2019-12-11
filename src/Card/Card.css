@@ -1,0 +1,21 @@
+.card {
+    background-color: white;
+    border: 3px solid teal;
+    height: 166px;
+    width: 153px;
+}
+
+.card_name, 
+.card_date,
+.card_time,
+.card_number,
+p {
+    color: teal;
+}
+
+.card_btn {
+    background-color: teal;
+    width: 85%;
+    color: white;
+
+}
