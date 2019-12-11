@@ -22,6 +22,7 @@ exports[`Card should match all the data being passed 1`] = `
   </p>
   <button
     className="card_btn"
+    onClick={[Function]}
   >
     Cancel
   </button>
