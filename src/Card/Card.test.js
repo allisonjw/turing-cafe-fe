@@ -13,9 +13,9 @@ describe('Card', () => {
     expect(wrapper).toMatchSnapshot()
   });
 
-  it('should delete a reservation when cancel is clicked', () => {
+  it.skip('should delete a reservation when cancel is clicked', () => {
     wrapper.instance().cancelReservation = jest.fn();
-    wrapper.instance().forceUpdate();
+    // wrapper.instance().forceUpdate();
     wrapper.find('button').simulate('click');
     expect(wrapper.instance().cancelReservation).toHaveBeenCalled()
   });
