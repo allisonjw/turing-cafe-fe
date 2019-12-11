@@ -3,14 +3,14 @@ export const getReservations = () => {
     .then(res => res.json())
 }
 
-// export const postReservation = (newRes) => {
-//     const options = {
-//         method: 'POST',
-//         body: JSON.stringify(newRes),
-//         headers: {
-//             'Content-Type': 'application/json'
-//         }
-//     };
-//     return fetch('', options)
-//     .then(res => res.json())
-// }
+export const postReservation = (newReservation) => {
+    const options = {
+        method: 'POST',
+        body: JSON.stringify(newReservation),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    };
+    return fetch('http://localhost:3001/api/v1/reservations', options)
+    .then(res => res.json())
+}
