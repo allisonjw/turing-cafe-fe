@@ -29,6 +29,7 @@ class App extends Component {
   cancelReservation = (id) => {
     removeReservation(id)
     .then(data => this.setState({reservations: data}))
+    .then(data => console.log(data))
     .then(error => console.log(error))
   }
 

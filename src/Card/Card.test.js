@@ -12,5 +12,12 @@ describe('Card', () => {
   it('should match all the data being passed', () => {
     expect(wrapper).toMatchSnapshot()
   });
-  
+
+  it('should delete a reservation when cancel is clicked', () => {
+    wrapper.instance().cancelReservation = jest.fn();
+    wrapper.instance().forceUpdate();
+    wrapper.find('button').simulate('click');
+    expect(wrapper.instance().cancelReservation).toHaveBeenCalled()
+  });
+
 });
