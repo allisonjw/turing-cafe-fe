@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { getReservations, postReservation } from '../apiCalls';
+import { getReservations, postReservation, removeReservation } from '../apiCalls';
 import Form from '../Form/Form';
 import Container from '../Container/Container';
 
@@ -26,6 +26,12 @@ class App extends Component {
     .catch(error => console.log(error))
   }
 
+  cancelReservation = (id) => {
+    removeReservation(id)
+    .then(data => this.setState({reservations: data}))
+    .then(error => console.log(error))
+  }
+
   render() {
     return (
       <div className="App">
@@ -34,7 +40,7 @@ class App extends Component {
           <Form addReservation={this.addReservation}/>
         </div>
         <div className='resy-container'>
-          <Container reservations={this.state.reservations}/>
+          <Container reservations={this.state.reservations} cancelReservation={this.cancelReservation}/>
         </div>
       </div>
     )

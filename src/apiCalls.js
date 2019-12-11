@@ -14,3 +14,14 @@ export const postReservation = (newReservation) => {
     return fetch('http://localhost:3001/api/v1/reservations', options)
     .then(res => res.json())
 }
+
+export const removeReservation = (id) => {
+    const options = {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    };
+    return fetch(`http://localhost:3001/api/v1/reservations/${id}`, options)
+    .then(res => res.json())
+}
