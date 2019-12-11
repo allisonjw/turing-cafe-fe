@@ -1,10 +1,22 @@
 import React from 'react';
 import './Container.css';
-// import Card from '../Card/Card';
+import Card from '../Card/Card';
 
-const Container = () => {
+const Container = ({reservations}) => {
+    let allReservations = reservations.map(res => {
+        return (<Card
+            key={res.id}
+            id={res.id}
+            name={res.name}
+            date={res.date}
+            time={res.time}
+            number={res.number} 
+        />)
+    })
     return (
-        <h2>Hello</h2>
+      <div className="resy_AllCards">
+        {allReservations}
+      </div>
     )
 }
 
