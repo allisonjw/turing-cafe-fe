@@ -25,6 +25,7 @@ class Form extends Component {
             number: this.state.number
         }
         this.props.addReservation(newReservation)
+        this.clearInputs()
     }
 
     clearInputs = () => {
@@ -38,6 +39,7 @@ class Form extends Component {
                   className="form_input"
                   type="text"
                   name="name"
+                  placeholder="Name"
                   value={this.state.name}
                   onChange={e => this.handleChange(e)}
                 ></input>
@@ -46,6 +48,7 @@ class Form extends Component {
                   type="text"
                   name="date"
                   value={this.state.date}
+                  placeholder="Date mm/dd"
                   onChange={e => this.handleChange(e)}
                 ></input>
                 <input
@@ -53,16 +56,22 @@ class Form extends Component {
                   type="text"
                   name="time"
                   value={this.state.time}
+                  placeholder="Time"
                   onChange={e => this.handleChange(e)}
                 ></input>
                 <input
                   className="form_input"
                   type="text"
                   name="number"
+                  placeholder="Number"
                   value={this.state.number}
                   onChange={e => this.handleChange(e)}
                 ></input>
-                <button></button>
+                <button 
+                  className="form_btn"
+                  onClick={e => this.submitReservation(e)}
+                  >Make Reservation
+                  </button>
             </form>
         )
     }
