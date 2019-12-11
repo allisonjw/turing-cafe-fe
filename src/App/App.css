@@ -17,3 +17,14 @@
   font-family: 'Pacifico', cursive;
   font-size: 50px;
 }
+
+.resy-form {
+  background-color: pink;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.resy-container {
+  display: flex;
+}
