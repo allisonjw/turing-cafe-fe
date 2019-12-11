@@ -8,4 +8,9 @@ describe('App', () => {
   beforeEach(() => {
     wrapper = shallow(<App />)
   });
+
+  it('should match all the data being passed', () => {
+    expect(wrapper).toMatchSnapshot()
+  });
+
 });

@@ -8,4 +8,9 @@ describe('Container', () => {
   beforeEach(() => {
     wrapper = shallow(<Container />)
   });
+
+  it.skip('should match all the data being passed', () => {
+    expect(wrapper).toMatchSnapshot()
+  })
+
 });

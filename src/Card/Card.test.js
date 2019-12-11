@@ -8,4 +8,9 @@ describe('Card', () => {
   beforeEach(() => {
     wrapper = shallow(<Card />)
   });
+
+  it('should match all the data being passed', () => {
+    expect(wrapper).toMatchSnapshot()
+  });
+  
 });

@@ -8,4 +8,9 @@ describe('Form', () => {
   beforeEach(() => {
     wrapper = shallow(<Form />)
   });
+
+  it('should match all the data being passed', () => {
+    expect(wrapper).toMatchSnapshot()
+  });
+  
 });
