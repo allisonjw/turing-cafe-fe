@@ -1,8 +1,10 @@
 .card {
     background-color: white;
-    border: 3px solid teal;
-    height: 166px;
-    width: 153px;
+    border: 5px solid teal;
+    height: max-content;
+    width: 15%;
+    margin: 1%;
+    padding: 1%;
 }
 
 .card_name, 
@@ -15,7 +17,8 @@ p {
 
 .card_btn {
     background-color: teal;
-    width: 85%;
+    height: 26px;
+    width: 93%;
     color: white;
 
 }
