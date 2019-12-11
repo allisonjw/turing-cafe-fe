@@ -20,6 +20,13 @@ describe('Form', () => {
 
       wrapper.instance().handleChange(mockEvent);
       expect(wrapper.state('name')).toEqual(expected)
+  });
+
+  it('new reservation is created when Make Reservation is clicked', () => {
+      wrapper.instance().submitReservation = jest.fn();
+      wrapper.instance().forceUpdate();
+      wrapper.find('button').simulate('click');
+      expect(wrapper.instance().submitReservation).toHaveBeenCalled()
   })
 
 });
