@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form should match all the data being passed 1`] = `
+<form>
+  <input
+    className="form_input"
+    name="name"
+    onChange={[Function]}
+    placeholder="Name"
+    type="text"
+    value=""
+  />
+  <input
+    className="form_input"
+    name="date"
+    onChange={[Function]}
+    placeholder="Date mm/dd"
+    type="text"
+    value=""
+  />
+  <input
+    className="form_input"
+    name="time"
+    onChange={[Function]}
+    placeholder="Time"
+    type="text"
+    value=""
+  />
+  <input
+    className="form_input"
+    name="number"
+    onChange={[Function]}
+    placeholder="Number"
+    type="text"
+    value=""
+  />
+  <button
+    className="form_btn"
+    onClick={[Function]}
+  >
+    Make Reservation
+  </button>
+</form>
+`;

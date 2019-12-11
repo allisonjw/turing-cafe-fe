@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should match all the data being passed 1`] = `
+<div
+  className="card"
+>
+  <h2
+    className="card_name"
+  />
+  <p
+    className="card_date"
+  />
+  <p
+    className="card_time"
+  >
+     pm
+  </p>
+  <p
+    className="number"
+  >
+    Number of Guest:
+  </p>
+  <button
+    className="card_btn"
+  >
+    Cancel
+  </button>
+</div>
+`;
