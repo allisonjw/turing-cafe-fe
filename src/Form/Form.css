@@ -6,13 +6,13 @@ form {
 input {
     margin-left: 1%;
     height: 26px;
-    width: 14%;
+    width: 16%;
 }
 
 .form_btn {
     background-color: teal;
     height: 30px;
-    width: 14%;
+    width: 16%;
     color: white;
     margin-left: 1%;
 }
